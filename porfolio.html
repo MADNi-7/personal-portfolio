@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Complaible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/2487105ccd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <img src="logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                 <li><a href="#header">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#services">Services</a></li>
+                 <li><a href="#portfolio">Portfolio</a></li>
+                 <li><a href="#contact">Contact</a></li>  
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+                <div class="header-text">
+                <p>Blockchain Developer</p>
+                    <h1>Hi, I'm<span> Al Madni Ansari</span><br>From India</h1>
+                </div>
+            </div>
+            <!----------about---------- -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                         <img src="pic11.jpg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I am passionate about exploring blockchain fundamentals,
+                                including consensus mechanisms, cryptography, and smart contract security.
+                                Currently, I am honing my skills in Solidity, Web3.js, 
+                                and blockchain frameworks while actively working on projects related to
+                                DeFi, NFTs, and decentralized governance.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Blockchain Development</span><br>Decentralized Applications</li>
+                                    <li><span>Web3 Development</span><br>Web App Development</li>
+                                    <li><span>solidity Developer</span><br>Bulid Smart Contracts</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span> </span><br> </li>
+                                    <li><span> </span><br> </li>
+                                    <li><span> </span><br> </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021</span><br>10+2 From St.Aloysius College Pilibhit</li>
+                                    <li><span>2023-2026</span><br>BCA From Invertis University
+                                        Bareilly</li>
+                                </ul>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>                     
+        </div>
+<!-- ----------services----------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                  <div>
+                      <i class="fa-solid fa-code"></i>
+                      <h2>Bulding Dapps</h2>
+                      <p>Building secure and scalable decentralized applications on Ethereum, Binance Smart Chain, and Polygon.</p>
+                      <a href="#">Learn more</a>
+                  </div>
+                    <div>
+                        <i class="fa-solid fa-file-contract"></i>
+                      <h2>Smart Contract Development</h2>
+                      <p>Writing and deploying Solidity smart contracts for DeFi, NFT, and DAO projects.</p>
+                      <a href="#">Learn more</a>
+                  </div>
+                    <div>
+                        <i class="fa-solid fa-web-awesome"></i>
+                      <h2>Web3 Integration</h2>
+                      <p>Connecting decentralized applications with Web3 wallets using Ethers.js and Web3.js.</p>
+                      <a href="#">Learn more</a>
+                  </div>  
+                </div>
+            </div>
+        </div> 
+        <!-- --------portfolio-------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Working</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="blocklchain1.jpeg">
+                        <div class="layer">
+                            <h3>Blockchain Technology</h3>
+                            <p>Blockchain is a decentralized, distributed ledger
+                                technology (DLT) that records transactions across multiple
+                                computers securely and transparently.It ensures immutability, security, and transparency by
+                                eliminating the need for intermediaries.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="blockchain2.jpg">
+                        <div class="layer">
+                            <h3>Cryptocurrency</h3>
+                            <p>A cryptocurrency is a digital or virtual currency
+                                that uses cryptography for security and operates 
+                                on a decentralized network, typically a blockchain.
+                                Unlike traditional currencies, cryptocurrencies are not 
+                                controlled by any central authority.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="metamask.png">
+                        <div class="layer">
+                            <h3>MetaMask Wallet</h3>
+                            <p>MetaMask is a crypto wallet and browser extension
+                                that allows users to interact with blockchain networks,
+                                particularly Ethereum and other EVM-compatible chains 
+                                like Binance Smart Chain (BSC) and Polygon.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- ------------contact------------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> almadniansari786@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +91 8630727950</p>
+                        <div class="icons">
+                            <a href="https://x.com/almadni_7?s=11"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/almadni?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/MADNi-7"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="AL%20MADNI%20cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Madni.<i class="fa-solid fa-arrow-trend-up"></i></p>
+            </div>
+        </div>
+        
+        <script>
+            
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+            
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px           ";
+            }
+        </script>
+    
+    </body>
+</html>
